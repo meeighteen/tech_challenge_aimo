@@ -1,8 +1,12 @@
-import { useEffect, useMemo, useState } from "react";
+import React from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setBooks } from "./store/store";
-import { Card } from "./components/Card/Card";
 import "./App.css";
+
+const Card = React.lazy(() =>
+  import("./components/Card/Card").then((module) => ({ default: module.Card }))
+);
 
 type Book = {
   id: number;
@@ -75,14 +79,15 @@ function App() {
         {!loadingBooks ? (
           filteredBooks.map(
             ({ id, titulo, descripcion, autor_id, Author }: Book) => (
-              <Card
-                key={id}
-                id={id}
-                title={titulo}
-                description={descripcion}
-                author_id={autor_id}
-                author={Author}
-              />
+              <Suspense key={id} fallback={<div>Cargando...</div>}>
+                <Card
+                  id={id}
+                  title={titulo}
+                  description={descripcion}
+                  author_id={autor_id}
+                  author={Author}
+                />
+              </Suspense>
             )
           )
         ) : (
