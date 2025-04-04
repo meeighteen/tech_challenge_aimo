@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f7f8fc;
+  height: 100vh;
+}
+
+.containerCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  padding-bottom: 30px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d83950;
+}
+
+.inputSearch {
+  min-width: 200px;
+  height: 15px;
+  padding: 10px;
+  color: #c3c3d1;
+  border: 1px solid #e6e6e9;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+.homeTitle {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  
+}
+

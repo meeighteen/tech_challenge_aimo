@@ -1,0 +1,64 @@
+
+[
+    {
+      "id": 1,
+      "titulo": "El Gran Viaje",
+      "descripcion": "Una emocionante aventura por tierras desconocidas.",
+      "autor_id": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Los Secretos del Bosque",
+      "descripcion": "Una historia mágica sobre criaturas ocultas en el bosque.",
+      "autor_id": 1
+    },
+    {
+      "id": 3,
+      "titulo": "Amor en París",
+      "descripcion": "Un romance apasionado en la Ciudad de la Luz.",
+      "autor_id": 3
+    },
+    {
+      "id": 4,
+      "titulo": "El Enigma del Reloj",
+      "descripcion": "Un misterio que gira en torno a un antiguo reloj de bolsillo.",
+      "autor_id": 3
+    },
+    {
+      "id": 5,
+      "titulo": "La Última Expedición",
+      "descripcion": "Exploradores enfrentan peligros desconocidos en busca de un tesoro perdido.",
+      "autor_id": 2
+    },
+    {
+      "id": 6,
+      "titulo": "Sombras en la Niebla",
+      "descripcion": "Una novela de suspense ambientada en una pequeña ciudad costera.",
+      "autor_id": 3
+    },
+    {
+      "id": 7,
+      "titulo": "El Canto de las Estrellas",
+      "descripcion": "Una epopeya espacial que abarca galaxias y civilizaciones.",
+      "autor_id": 5
+    },
+    {
+      "id": 8,
+      "titulo": "El Secreto del Pergamino",
+      "descripcion": "Un antiguo pergamino revela secretos ancestrales.",
+      "autor_id": 1
+    },
+    {
+      "id": 9,
+      "titulo": "La Isla Prohibida",
+      "descripcion": "Náufragos luchan por sobrevivir en una isla misteriosa.",
+      "autor_id": 5
+    },
+    {
+      "id": 10,
+      "titulo": "El Arte de la Ilusión",
+      "descripcion": "Un ilusionista desafía los límites de la realidad.",
+      "autor_id": 4
+    }
+  ]
+  

@@ -1,0 +1,61 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 1px solid #e6e6e9;
+
+  width: 100%;
+
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+
+  padding: 15px;
+
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.Header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 0.9rem;
+  gap: 5px;
+}
+
+.description {
+  color: #000;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.buttonShowBook {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  color: #a5a9be;
+}
+
+.authorName {
+  font-weight: 500;
+}

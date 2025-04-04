@@ -1,0 +1,11 @@
+.tag {
+  display: flex;
+  width: fit-content;
+  border: none;
+  background-color: #e0f7dc;
+  border-radius: 30px;
+  padding: 5px 10px 10px 10px;
+
+  font-size: 10px;
+  color: #a1bb9a;
+}
