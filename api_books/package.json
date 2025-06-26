@@ -2,17 +2,21 @@
   "name": "api_books",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node server/index.js",
-    "dev": "nodemon --exec babel-node server/index.js"
+    "start": "babel-node src/server/index.js",
+    "dev": "nodemon --exec babel-node src/server/index.js",
+    "build": "babel src --out-dir dist --extensions \".js\" && npm run copy-static",
+    "copy-static": "cp -r src/resources dist/resources"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.27.0",
     "@babel/core": "^7.26.10",
     "@babel/node": "^7.26.0",
@@ -20,7 +24,6 @@
     "cors": "^2.8.5",
     "nodemon": "^3.1.9"
   },
-  "devDependencies": {},
   "nodemonConfig": {
     "ignore": [
       "**/*.test.ts",

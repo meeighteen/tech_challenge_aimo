@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { getAuthors, getBooks } from "../controllers/bookControllers";
+import { getAuthors, getBooks } from "../controllers/bookControllers.js";
 
 const app = express();
 
